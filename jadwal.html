@@ -16,6 +16,17 @@
 
 	<body>
 
+	<script>
+		function refreshTime() {
+		const timeDisplay = document.getElementById("time");
+		const dateString = new Date().toLocaleString();
+		const formattedString = dateString.replace(", ", " - ");
+		timeDisplay.textContent = formattedString;
+		}
+		setInterval(refreshTime, 1000);
+	</script>
+	<P align="center"><span id="time"> </span></P>
+
 	<h1 align=center><font color=E60909><b><i>
 	JADWAL PELAJARAN <br/> XI RPL 2 <br/> SMK NEGERI 2 SEMARANG 
 	</i></b></font></h1>	
@@ -24,7 +35,7 @@
 	<body>
 	
 	<table border="2" align=center>
-	<tr>
+	<tr bgcolor="blue">
 	<td></td>
 	<td><p align=center><b>1 <br/></b><br/> 07.00-07.45 
 	<p></td>
@@ -54,7 +65,7 @@
 	</b><p></td>
 	<td colspan="2" bgcolor="red"><p align=center><b> Matematika
 	</b><p></td>
-	<td colspan="4" bgcolor="blue"><p align=center><b> Pemrograman <br/> Berorientasi Objek
+	<td colspan="4" bgcolor="lightgreen"><p align=center><b> Pemrograman <br/> Berorientasi Objek
 	</tr>
 	
 	<tr>
@@ -95,13 +106,13 @@
 	</b></p></td>
 	<td colspan="3"><p align=center><b> Bahasa Inggris
 	</b></p></td>
-	<td colspan="4" bgcolor="blue"><p align=center><b> Pemrograman <br/> Berorientasi Objek
+	<td colspan="4" bgcolor="lightgreen"><p align=center><b> Pemrograman <br/> Berorientasi Objek
 	</b></p></td>
 	</tr>
 	</table>
 	
 	<table border="0">
-	<td><p><a href="index.html"style=" text-decoration:none; color:black">Back</a></p></td>
+	<td><p><a href="index.html"style=" color:black">Back</a></p></td>
 	</table>
 	
 	</body>

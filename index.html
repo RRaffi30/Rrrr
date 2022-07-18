@@ -13,9 +13,20 @@
 </head>
 <body>
 
+    <script>
+        function refreshTime() {
+        const timeDisplay = document.getElementById("time");
+        const dateString = new Date().toLocaleString();
+        const formattedString = dateString.replace(", ", " - ");
+        timeDisplay.textContent = formattedString;
+        }
+        setInterval(refreshTime, 1000);
+    </script>
+    <P align="center"><span id="time"> </span></P>
+
     <h1 align="center"><b><i> Selamat Datang </i></b></h1>
 
-    <p align=center><img src="logo.png"></p>
+    <p align=center><a href="https://smkn2semarang.sch.id/"><img src="logo.png"> </a></p>
     
     <h1 align="center"><b><i> XI RPL 2 </i></b></h1>
     <br/>
@@ -28,11 +39,14 @@
     <br/>
     <table border="0" align="center"><table border="0" align="center">
     <tr><td align="center">
+    <h1><a href="jam.html" style="text-decoration:none;"><p align=center style="color:black;"> Jam Pelajaran </p></a></h1>
+    </td></tr>
+    </table>
+    <table border="0" align="center"><table border="0" align="center">
+    <tr><td align="center">
     <h1><a href="siswa.html" style="text-decoration:none;"><p align=center style="color:black;"> Daftar Siswa </p></a></h1>
     </td></tr>
-</table>
-
-
+    </table>
 
 </body>
 </html>
